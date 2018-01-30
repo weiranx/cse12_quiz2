@@ -1,3 +1,7 @@
+# Quiz 2 for CSE 12
+## Consider editing?
+[Click Here to suggest edit on Github](https://github.com/weiranx/cse12_quiz2/blob/master/quiz2.md)
+
 ## What is a void pointer?
 a pointer to everything
 
