@@ -90,6 +90,7 @@ main() {
   long * lp;
   func2(&lp);
 }
+```
 
 
 ## Are the following two types the same or different?
