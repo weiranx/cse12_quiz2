@@ -242,43 +242,68 @@ flip
 ###How do you describe the result of the following three operations?
 xxx ^= yyy; yyy^=xxx; xxx^=yyy;
 swap
+xxx: 10101010
+yyy: 11110000
+xxx: 01011010   xxx = xxx ^ yyy
+yyy: 10101010   yyy = xxx ^ yyy
+xxx: 11110000   xxx = xxx ^ yyy
+swap x and y without temp
 
 ###T or F: ANDing is used to extract bits. 
+T
 
-###T or F: ANDing is used to set bits. 
+##T or F: ANDing is used to set bits. 
+F
 
+##T or F: ANDing is used to clear bits. 
+T
 
-###T or F: ANDing is used to clear bits. 
+##T or F: ANDing is used to flip bits.
+F
 
-###T or F: ANDing is used to flip bits.
+##T or F: ORing is used to extract bits. 
+F
+##T or F: ORing is used to set bits. 
+T
 
-T or F: ORing is used to extract bits. 
-T or F: ORing is used to set bits. 
-T or F: ORing is used to clear bits. 
+##T or F: ORing is used to clear bits. 
+
 T or F: ORing is used to flip bits.
 
-T or F: XORing is used to extract bits. 
-T or F: XORing is used to set bits. 
-T or F: XORing is used to flip bits.
+##T or F: XORing is used to extract bits. 
+F
+##T or F: XORing is used to set bits. 
+##T or F: XORing is used to flip bits.
 
-Shifting bit to the right has the effect of ___________ 
+##Shifting bit to the right has the effect of ___________ 
+divide by power of two
+
 Shifting bit to the left has the effect of ___________
+multiply 2
+##What is the operator used to shift bits to the left? 
+<<
 
-What is the operator used to shift bits to the left? 
-What is the operator used to shift bits to the right?
+##What is the operator used to shift bits to the right?
+>>
 
-In your calculator of hw4, what is the best word to describe the character that intopost will "unget"? 
-In your calculator of hw4, what is the best word to describe the character that decin will "unget"?
+##In your calculator of hw4, what is the best word to describe the character that intopost will "unget"? 
+digits
 
-In your intopost code of hw4, the values pushed to a stack originate from what two functions?
+##In your calculator of hw4, what is the best word to describe the character that decin will "unget"?
+non digits
 
-Using English words, describe the following declaration:
+##In your intopost code of hw4, the values pushed to a stack originate from what two functions?
+setupword(); decin()
+
+
+##Using English words, describe the following declaration:
 int (*x)[][];
 
-Using English words, describe the following declaration:
+
+##Using English words, describe the following declaration:
 int (*x)()[];
 
-Using English words, describe the following declaration:
+##Using English words, describe the following declaration:
 int (*x[])();
 
 Using English words, describe the following declaration:
@@ -299,11 +324,19 @@ int (*x())();
 Using English words, describe the following declaration:
 int (*x[])[];
 
-Using English words, describe the following declaration:
+##Using English words, describe the following declaration:
 long (*x[])(long,long);
+array of pointers to functions taking two longs returning long
 
-Considering a tiered or layered design, each method need to work based on its ________ and ________ values. 
-T or F: Considering a tier or layered design, methods of outer tiers are called by methods of inner tiers. 
-T or F: Considering a tier or layered design, methods of inner tiers are called by methods of outer tiers.
+##Considering a tiered or layered design, each method need to work based on its ________ and ________ values. 
+params; return values
 
-Assuming malloc returned 2000, draw a hw3 stack created with a size of 10 after pushing 25, 50, 75, 100 and popping twice.
+##T or F: Considering a tier or layered design, methods of outer tiers are called by methods of inner tiers. 
+F
+
+##T or F: Considering a tier or layered design, methods of inner tiers are called by methods of outer tiers.
+T
+
+##Assuming malloc returned 2000, draw a hw3 stack created with a size of 10 after pushing 25, 50, 75, 100 and popping twice.
+pop 
+
