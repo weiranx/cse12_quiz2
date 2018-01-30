@@ -167,9 +167,11 @@ constructor
 destructor
 
 ## Translate the following method call using your hw3 stack into an equivalent line of Java code assuming needed classes and variables are defined.
+```
 push (mainStack, 10); /* C code */
 
 mainStack.push(10); // Java code
+```
 
 ## Which stack methods of hw3 need to check if the stack is full before the requested operation can be completed successfully? 
 push; isfull
@@ -209,7 +211,9 @@ index
 public information
 
 ## Name the three binary masking bit manipulation operations
+```
 | & ^
+```
 
 
 ## Intuitively speaking, ANDing with ones gives ____________ 
@@ -248,6 +252,7 @@ flip
 01011010
 
 ## How do you describe the result of the following three operations?
+```
 xxx ^= yyy; yyy^=xxx; xxx^=yyy;
 swap
 xxx: 10101010
@@ -256,6 +261,7 @@ xxx: 01011010   xxx = xxx ^ yyy
 yyy: 10101010   yyy = xxx ^ yyy
 xxx: 11110000   xxx = xxx ^ yyy
 swap x and y without temp
+```
 
 ## T or F: ANDing is used to extract bits. 
 T
@@ -306,35 +312,54 @@ setupword(); decin()
 
 
 Using English words, describe the following declaration:
+```
 int (*x)[][];
-
+```
 
 Using English words, describe the following declaration:
+```
 int (*x)()[];
+```
 
 Using English words, describe the following declaration:
+```
 int (*x[])();
+```
 
 Using English words, describe the following declaration:
+```
 int x[][]();
+```
 
 Using English words, describe the following declaration:
+```
 int (*x())[];
+```
 
 Using English words, describe the following declaration:
+```
 int x()[]();
+```
 
 Using English words, describe the following declaration:
+```
 int *(*x)[];
+```
 
 Using English words, describe the following declaration:
+```
 int (*x())();
+```
 
 Using English words, describe the following declaration:
+```
 int (*x[])[];
+```
 
 Using English words, describe the following declaration:
+```
 long (*x[])(long,long);
+```
 array of pointers to functions taking two longs returning long
 
 ## Considering a tiered or layered design, each method need to work based on its ________ and ________ values. 
