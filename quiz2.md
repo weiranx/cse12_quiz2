@@ -62,23 +62,30 @@ debut error
 
 
 ## Write a function with the purpose of assigning a long that exists elsewhere to 0. 
+```c
 void func(long * lp) {
   *lp = 0;
 }
+```
 
 ## Write a function with the purpose of assigning a long pointer that exists elsewhere to 0. 
+```c
 void func2(long ** lpp) {
   *lpp = 0;
 }
+```
 
 ## Write a main function that has a function call to assign a local long variable to 0.
+```c
 main() {
   long lll;
   func(&lll);
 }
+```
 
 
 ## Write a main function that has a function call to assign a local long pointer variable to 0.
+```c
 main() {
   long * lp;
   func2(&lp);
@@ -112,31 +119,31 @@ yes
 no
 
 ## Excluding validity checks and return values, write the body code for the push function of hw3. 
-'
+```c
 long sp = this_Stack[SPI];
 this_Stack[sp] = item;
 this_Stack[SPI]++;
-'
+```
 
 ## Excluding validity checks and return values, write the body code for the pop function of hw3. 
-'
+```c
 long sp;
 sp = --this_Stack[SPI];
 *item = this_Stack[sp];
-'
+```
 
 
 ## Excluding validity checks and return values, write the body code for the top function of hw3.
-'
+```c
 long sp = this_Stack[SPI];
 *item = this_Stack[sp-1];
-'
+```
 
 
 ## Excluding validity checks and return values, write the body code for the empty_Stack function of hw3. 
-'
+```c
 this_Stack[SPI] = 0;
-'
+```
 ## What condition is checked to determine if the stack is empty in hw3? 
 stack pointer index == 0
 
